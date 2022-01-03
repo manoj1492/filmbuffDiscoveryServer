@@ -1,5 +1,5 @@
-server:
-  port: 8761
+#server:
+#  port: 8761
 
 spring:
   application:
@@ -7,10 +7,10 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: filmbuff-discovery.herokuapp.com/
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8080/eureka
+      defaultZone: https://filmbuff-discovery.herokuapp.com/eureka
   
